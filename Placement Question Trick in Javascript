@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Placement Question</title>
+    </head>
+    <body>
+        <script>
+           // This is Wrong Trick..............
+        //       Array.prototype.extraproperty="Raghunandansharma";
+        //       const Mynewarray=[11,12,13,14,15,15]
+        //       for(let v in Mynewarray)
+        //       {
+        //        console.log(v)
+        //       }
+        
+        
+o/p== 0
+      1 
+      2
+      3
+      4
+      extraproperty
+
+
+
+        // This is Right Trick................
+            Array.prototype.extraproperty="Raghunandansharma";
+            const Mynewarray=[11,12,13,14,15]
+            for(let v in Mynewarray)
+            {
+                if(Mynewarray.hasOwnProperty(v))
+                {
+                    console.log(v)
+                }
+            }
+        </script>
+    </body>
+</html>
+
+o/p== 0
+      1
+      2
+      3
+      4
